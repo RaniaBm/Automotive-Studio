@@ -1,0 +1,15 @@
+{
+  "name": "automotivestudio",
+  "version": "1.0.0",
+  "description": "Automotive Studio is an E-Commerce Web Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rania",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "router": "^1.3.8"
+  }
+}
