@@ -4,18 +4,31 @@ const admin = require('../models/admin.models');
 const sequelize = require('../models/admin.models');
 
 sequelize.sync().then(() => {
-   console.log('Admin table created successfully!');
+    console.log('Admin table created successfully!');
 
-   admin.create({
-       id: 1,
-       email: "raniabm21@gmail.com",
-       password: "123"
-   }).then(res => {
-       console.log(res)
-   }).catch((error) => {
-       console.error('Failed to create a new record : ', error);
-   });
+    // // To insert a new record 
+    //    admin.create({
+    //        id: 1,
+    //        email: "raniabm21@gmail.com",
+    //        password: "123"
+    //    }).then(res => {
+    //        console.log(res)
+    //    }).catch((error) => {
+    //        console.error('Failed to create a new record : ', error);
+    //    });
+
+    sequelize.sync().then(() => {
+
+        admin.findAll().then(res => {
+            console.log(res)
+        }).catch((error) => {
+            console.error('Failed to retrieve data : ', error);
+        });
+
+    }).catch((error) => {
+        console.error('Unable to create table : ', error);
+    });
 
 }).catch((error) => {
-   console.error('Unable to create table : ', error);
+    console.error('Unable to create table : ', error);
 });

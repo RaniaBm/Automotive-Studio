@@ -6,23 +6,37 @@ const sequelize = require('../models/user.models');
 sequelize.sync().then(() => {
     console.log('User table created successfully!');
 
-    User.create({
-        id: 1,
-        email: "mustajabajwah@gmail.com",
-        password: "123"
-    }).then(res => {
-        console.log(res)
+    // // To insert a new record 
+    // User.create({
+    //     id: 1,
+    //     email: "mustajabajwah@gmail.com",
+    //     password: "123"
+    // }).then(res => {
+    //     console.log(res)
+    // }).catch((error) => {
+    //     console.error('Failed to create a new record : ', error);
+    // });
+    // User.create({
+    //     id: 2,
+    //     email: "aimmichamps@gmail.com",
+    //     password: "123"
+    // }).then(res => {
+    //     console.log(res)
+    // }).catch((error) => {
+    //     console.error('Failed to create a new record : ', error);
+    // });
+
+    // To get all the records
+    sequelize.sync().then(() => {
+
+        User.findAll().then(res => {
+            console.log(res)
+        }).catch((error) => {
+            console.error('Failed to retrieve data : ', error);
+        });
+
     }).catch((error) => {
-        console.error('Failed to create a new record : ', error);
-    });
-    User.create({
-        id: 2,
-        email: "aimmichamps@gmail.com",
-        password: "123"
-    }).then(res => {
-        console.log(res)
-    }).catch((error) => {
-        console.error('Failed to create a new record : ', error);
+        console.error('Unable to create table : ', error);
     });
 
 }).catch((error) => {
