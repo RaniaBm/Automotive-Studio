@@ -32,18 +32,35 @@ sequelize.sync().then(() => {
     //     console.error('Failed to create a new record : ', error);
     // });
 
-    // To get all the records
-    sequelize.sync().then(() => {
+    // // To get all the records
+    // sequelize.sync().then(() => {
 
-        products.findAll().then(res => {
-            console.log(res)
-        }).catch((error) => {
-            console.error('Failed to retrieve data : ', error);
-        });
+    //     products.findAll().then(res => {
+    //         console.log(res)
+    //     }).catch((error) => {
+    //         console.error('Failed to retrieve data : ', error);
+    //     });
 
-    }).catch((error) => {
-        console.error('Unable to create table : ', error);
-    });
+    // }).catch((error) => {
+    //     console.error('Unable to create table : ', error);
+    // });
+
+    //  //to delete data from the table
+    // sequelize.sync().then(() => {
+
+    //     products.destroy({
+    //         where: {
+    //             id: 2
+    //         }
+    //     }).then(() => {
+    //         console.log("Successfully deleted record.")
+    //     }).catch((error) => {
+    //         console.error('Failed to delete record : ', error);
+    //     });
+
+    // }).catch((error) => {
+    //     console.error('Unable to create table : ', error);
+    // });
 }).catch((error) => {
     console.error('Unable to create table : ', error);
 });
