@@ -6,16 +6,16 @@ const sequelize = require('../models/admin.models');
 sequelize.sync().then(() => {
     console.log('Admin table created successfully!');
 
-    // // To insert a new record 
-    //    admin.create({
-    //        id: 1,
-    //        email: "raniabm21@gmail.com",
-    //        password: "123"
-    //    }).then(res => {
-    //        console.log(res)
-    //    }).catch((error) => {
-    //        console.error('Failed to create a new record : ', error);
-    //    });
+    // To insert a new record 
+    admin.create({
+        id: req.body.id,
+        email: req.body.email,
+        password: "123"
+    }).then(res => {
+        console.log(res)
+    }).catch((error) => {
+        console.error('Failed to create a new record : ', error);
+    });
 
     // // to retreive data from the table
     // sequelize.sync().then(() => {
@@ -50,3 +50,5 @@ sequelize.sync().then(() => {
 }).catch((error) => {
     console.error('Unable to create table : ', error);
 });
+
+module.exports = { login }

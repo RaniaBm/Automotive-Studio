@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    padding-top: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: lighter;
+    font-family: 'SourceSans', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+body {
+    background-image: url('images/banner.jpg');
+    /* or contain, or a specific size like 50% 50% */
+    width: 100%;
+    height: 700px;
+    /* or any other height you want */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#logotitle {
+    color: rgb(168, 168, 168);
+    font-family: 'Rossanova';
+    font-size: 30px;
+}
+/* 
+#slogan {
+    margin-top: -5px;
+    color: #fcc71e;
+    font-family: 'SourceSans', sans-serif;
+} */
+
+.logo img {
+    margin-top: -10px;
+    width: 140px;
+    height: auto;
+    /* or use a specific height value */
+}
+
+.container {
+    background-color: rgba(168, 168, 168, 0.5);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 450px;
+    margin-right: 200px;
+    border-radius: 20px;
+}
+
+.scenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 680px;
+    /* Set the width to 80% of the parent container */
+    height: 450px;
+    /* Set the height to 50% of the parent container */
+}
+
+.center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    /* Set the width to 80% of the parent container */
+    height: 400px;
+    /* Set the height to 50% of the parent container */
+}
+
+.centersignup {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: 'Rossanova';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(192, 192, 192);
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fcc71e;
+    font-size: 15px;
+    font-family: 'SourceSans', sans-serif;
+}
+
+.loginsection,
+.addsection {
+    padding: 20px;
+}
+
+.addsection {
+    margin-top: 2px;
+    margin-left: 20px;
+}
+#containerid {
+
+    height: 500px;
+    width: 500px;
+    margin-left: 680px;
+    margin-top: 80px;
+}
+
+.delcontainer {
+    height: 300px;
+    width: 500px;
+    margin-left: 680px;
+    margin-top: 200px;
+}
+
+#backto {
+    margin-left: 320px;
+}
+
+input {
+    padding: 0px 10px;
+    width: 240px;
+    height: 45px;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 60px;
+    border-radius: 24px;
+    border: 1px solid white;
+}
+
+.initialbtn {
+    margin-left: 10px;
+}
+
+button {
+    padding: 0px 10px;
+    width: 248px;
+    height: 45px;
+    margin-top: 38px;
+    margin-left: 20px;
+    margin-right: 55px;
+    border-radius: 24px;
+
+    float: right;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    transition: .5s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #fcc71e;
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#startedul {
+    margin-top: 120px;
+    margin-left: -110px;
+    margin-right: 0px;
+}
+
+li {
+    list-style: none;
+    font-family: 'SourceSans', sans-serif;
+}
+
+li button {
+    font-size: 18px;
+    width: 150px;
+    text-align: center;
+    padding: 0px 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.navbar,
+.navmenus {
+    color: black;
+    display: flex;
+    font-size: 25px;
+}
+
+.menu li:hover {
+    background-color: #fcc71e;
+    border-radius: 0px;
+    transition: 0.3s ease;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgba(168, 168, 168, 0.5);
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 300px;
+    height: 150%;
+}
+
+.sidebar a {
+    text-align: left;
+    padding: 20px;
+    display: block;
+    margin: 10px 0px;
+}
+
+.main {
+    font-family: 'Rossanova';
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 420px;
+    color: white;
+}
