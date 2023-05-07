@@ -1,4 +1,45 @@
-html {
+.top-menu {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    /* $seasalt */
+    background-color: rgba(252, 250, 250, 1);
+}
+
+.topdown-menu {
+    /* $cardinal */
+    background-color: rgba(189, 51, 58, 1);
+    border: 2px chocolate solid;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+.logo img {
+    width: 100px;
+    margin: 10px 80px;
+}
+.navbar{
+    /* border: 5px whitesmoke solid; */
+    padding: 18px;
+}
+
+body {
+    color: #0F1111;
+    background-color: rgba(252, 250, 250, 1);
+    /* $dim-gray */
+    /* background-color: rgba(110, 109, 110, 1); */
+    /* $black-2 */
+    /* background-color: rgba(0, 0, 0, 1); */
+    /* $seasalt */
+    /* background-color: rgba(252, 250, 250, 1); */
+    /* $cardinal */
+    /* background-color: rgba(189, 51, 58, 1); */
+}
+
+
+
+/* html {
     scroll-behavior: smooth;
 }
 
@@ -13,11 +54,8 @@ h2 {
 }
 
 body {
-    background-image: url('images/banner.jpg');
-    /* or contain, or a specific size like 50% 50% */
     width: 100%;
     height: 700px;
-    /* or any other height you want */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,19 +66,8 @@ body {
     font-family: 'Rossanova';
     font-size: 30px;
 }
-/* 
-#slogan {
-    margin-top: -5px;
-    color: #fcc71e;
-    font-family: 'SourceSans', sans-serif;
-} */
 
-.logo img {
-    margin-top: -10px;
-    width: 140px;
-    height: auto;
-    /* or use a specific height value */
-}
+
 
 .container {
     background-color: rgba(168, 168, 168, 0.5);
@@ -56,9 +83,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 680px;
-    /* Set the width to 80% of the parent container */
     height: 450px;
-    /* Set the height to 50% of the parent container */
 }
 
 .center {
@@ -67,9 +92,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 650px;
-    /* Set the width to 80% of the parent container */
     height: 400px;
-    /* Set the height to 50% of the parent container */
 }
 
 .centersignup {
@@ -226,4 +249,4 @@ li button {
     margin-top: 20px;
     margin-left: 420px;
     color: white;
-}
+} */
